@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100%;
+}
+
+.tekst {
+    grid-area: tekst;
+}
+
+.benis {
+    grid-area: schmenis;
+}
+
+#postit1 {
+    grid-area: img;
+}
+
+#postit2 {
+    grid-area: image;
+}
+
+#postit3 {
+    grid-area: bilde;
+}
+
+#postit4 {
+    grid-area: bld;
+}
+
+.tekst1 {
+    grid-area: tekst1;
+}
+
+.nice {
+    grid-area: text;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-areas: 'image text';
+}
+
+#logo {
+    display: inline-block;
+    float: left;
+    position: relative;
+    padding-top: 16px;
+}
+
+#background {
+    background-image: url("./bilder/proxy.duckduckgo.com.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+}
+
+
+#navbar {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#sentrer {
+    width: 100%;
+    background-image: linear-gradient(to bottom right, #ff9400, #ffdd00);
+    margin: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#navbar li {
+    float: left;
+}
+
+li a{
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 30px 2.5vw;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Roboto;
+    font-size: 20px;
+    color:#fff;
+}
+
+li a:hover{
+    text-decoration: underline;
+}
+
+#navbar li {
+    display: inline-block;
+}
+
+/*end navbar*/
+
+
+.underCover {
+    text-align: center;
+    padding: 2.5% 30% 3vh 30%;
+}
+
+.greyfancystrek {
+    border: 1px solid grey;
+    width: 56%;
+    margin: 0px 22%;
+    opacity: 0.2;
+}
+
+
+.whitePicRight {
+    text-align: left;
+    padding: 3vh 30%;
+    display: grid;
+    grid-template-areas: 'schmenis img';
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.whitePicRight img {
+    float: right;
+    height: 15vh;
+}
+
+.coloredPicLeft {
+    text-align: left;
+    padding: 15vh 30%;
+    background-image: linear-gradient(to bottom right, #ff9400, #ffdd00);
+    box-shadow: 16px 8px 16px 8px rgba(0,0,0,0.2);
+}
+
+.coloredPicLeft img {
+    float: left;
+    height: 20vh;
+    padding-right: 5vw;
+}
+
+.secondWhitePicRight {
+    text-align: left;
+    display: grid;
+    grid-template-areas: 'tekst bilde';
+    padding: 10vh 30%;
+    padding-bottom: 15vh;
+}
+
+.secondWhitePicRight img {
+    float: right;
+    height: 20vh;
+    padding-left: 10vw;
+}
+
+.coloredPicAbove {
+    text-align: center;
+    display: grid;
+    grid-template-areas: 'bld''tekst1';
+    padding: 10vh 30%;
+    background-image: linear-gradient(to bottom right, #ff9400, #ffdd00);
+    box-shadow: 0px 0px 16px 8px rgba(0,0,0,0.2);
+}
+
+.coloredPicAbove img {
+    float: center;
+    height: 15vh;
+}
+
+footer {
+    padding: 10vh 15vw;
+    color: #fff;
+    background-color: #243746;
+}
+
+footer a{
+    color: #fff;
+}
+
+footer a:hover {
+   color: #e5e5e5;    
+}
+
+#samlepunktlogo {
+    height: 50px;
+}
+
+#facebooklogo {
+    height: 32px;
+    margin-top: 10px;
+    padding-right: 2px;
+}
+
+#linkedinlogo {
+    height: 32px;
+    margin-top: 10px;
+    padding-right: 2px;
+}
+
+#twitlogo {
+    height: 32px;
+    margin-top: 10px;
+    padding-right: 2px;
+}
+
+@media screen and (max-width: 1500px) {}
+
+@media screen and (max-width:820px) {
+
+    .grid-container2 {
+        display: grid;
+        grid-template-areas: 'image''text';
+    }
+
+    .whitePicRight {
+        grid-template-areas: 'img''schmenis';
+    }
+
+    .secondWhitePicRight {
+        grid-template-areas: 'bilde''tekst';
+    }
+
+    .secondWhitePicRight img {
+        padding-left: 0vw;
+        padding-bottom: 15px;
+    }
+}
+
+@media screen and(max-width: 715px) {}
+
+
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {}
