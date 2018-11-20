@@ -129,8 +129,8 @@ li a:hover{
 .whitePicRight img {
     float: right;
     width: 20vw;
+    min-width: 250px;
     box-shadow: 5px 8px 15px 5px rgba(0,0,0,0.2);
-    margin-top: 4.5vh;
     margin-left: 20px;
 }
 
@@ -146,7 +146,7 @@ li a:hover{
 .coloredPicLeft img {
     float: left;
     width: 20vw;
-    margin-top: 5.5vh;
+    min-width: 300px;
     margin-right: 2.5vw;
     box-shadow: 5px 8px 15px 5px rgba(0,0,0,0.2);
 }
@@ -162,8 +162,8 @@ li a:hover{
 .secondWhitePicRight img {
     float: right;
     width: 25vw;
+    min-width: 300px;
     margin-left: 2.5vw;
-    margin-top: 5.2vh;
     box-shadow: 5px 8px 15px 5px rgba(0,0,0,0.2);
 }
 
@@ -179,6 +179,7 @@ li a:hover{
 .coloredPicAbove img {
     float: center;
     width: 35vw;
+    min-width: 300px;
     margin-left: 7.5vw;
     margin-bottom: 3vh;
     box-shadow: 5px 8px 15px 5px rgba(0,0,0,0.2);
@@ -233,6 +234,20 @@ footer a:hover {
     padding: 0px 35%;
 }
 
+@media screen and (max-width: 1350px) {
+    .whitePicRight {
+        padding: 3vh 20%;
+    }
+    
+    .coloredPicLeft {
+        padding: 15vh 20%;
+    }
+    
+    .secondWhitePicRight {
+        padding: 10vh 20%;
+    }
+}
+
 @media screen and (max-width:950px) {
 
     .underCover {
@@ -255,6 +270,7 @@ footer a:hover {
         margin-bottom: 20px;
         width: 50vw;
         height: auto;
+        min-width: 0px;
     }
     
     .coloredPicLeft {
@@ -267,6 +283,7 @@ footer a:hover {
         height: auto; 
         margin-bottom: 20px;
         margin-left: 9.5vw;
+        min-width: 0;
     }
 
     .secondWhitePicRight {
@@ -281,6 +298,7 @@ footer a:hover {
         margin-bottom: 20px;
         width: 50vw; 
         height: auto;
+        min-width: 0px;
     }
     
     .coloredPicAbove {
@@ -290,6 +308,7 @@ footer a:hover {
     .coloredPicAbove img{
         width: 50vw;
         margin-left: 11vw;
+        min-width: 0px;
     }
     
     footer {
