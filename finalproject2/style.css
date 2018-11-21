@@ -70,14 +70,14 @@ body {
     width: 100%;
     background-image: linear-gradient(to bottom right, #ff9400, #ffdd00);
     margin: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 #navbar li {
     float: left;
 }
 
-li a{
+li a {
     display: inline-block;
     color: black;
     text-align: center;
@@ -86,10 +86,10 @@ li a{
     font-weight: bold;
     font-family: Roboto;
     font-size: 20px;
-    color:#fff;
+    color: #fff;
 }
 
-li a:hover{
+li a:hover {
     text-decoration: underline;
 }
 
@@ -99,14 +99,13 @@ li a:hover{
 
 /*end navbar*/
 
-
 .underCover {
     text-align: center;
     padding: 2.5% 25% 3vh 25%;
 }
 
-.underCover h2{
-    padding: 10px 0px;;
+.underCover h2 {
+    padding: 10px 0px;
 }
 
 
@@ -123,14 +122,23 @@ li a:hover{
     padding: 3vh 25%;
     display: grid;
     grid-template-areas: 'schmenis img';
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    -webkit-animation: fadein 4.5s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 4.5s;
+    /* Firefox < 16 */
+    -ms-animation: fadein 4.5s;
+    /* Internet Explorer */
+    -o-animation: fadein 4.5s;
+    /* Opera < 12.1 */
+    animation: fadein 4.5s;
 }
 
 .whitePicRight img {
     float: right;
     width: 20vw;
     min-width: 250px;
-    box-shadow: 5px 8px 15px 5px rgba(0,0,0,0.2);
+    box-shadow: 5px 8px 15px 5px rgba(0, 0, 0, 0.2);
     margin-left: 20px;
 }
 
@@ -140,7 +148,16 @@ li a:hover{
     text-align: left;
     padding: 15vh 25%;
     background-image: linear-gradient(to bottom right, #ff9400, #ffdd00);
-    box-shadow: 16px 8px 16px 8px rgba(0,0,0,0.2);
+    box-shadow: 16px 8px 16px 8px rgba(0, 0, 0, 0.2);
+    -webkit-animation: fadein 5s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 5s;
+    /* Firefox < 16 */
+    -ms-animation: fadein 5s;
+    /* Internet Explorer */
+    -o-animation: fadein 5s;
+    /* Opera < 12.1 */
+    animation: fadein 5s;
 }
 
 .coloredPicLeft img {
@@ -148,7 +165,7 @@ li a:hover{
     width: 20vw;
     min-width: 300px;
     margin-right: 2.5vw;
-    box-shadow: 5px 8px 15px 5px rgba(0,0,0,0.2);
+    box-shadow: 5px 8px 15px 5px rgba(0, 0, 0, 0.2);
 }
 
 .secondWhitePicRight {
@@ -157,6 +174,15 @@ li a:hover{
     grid-template-areas: 'tekst bilde';
     padding: 10vh 25%;
     padding-bottom: 15vh;
+    -webkit-animation: fadein 6s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 6s;
+    /* Firefox < 16 */
+    -ms-animation: fadein 6s;
+    /* Internet Explorer */
+    -o-animation: fadein 6s;
+    /* Opera < 12.1 */
+    animation: fadein 6s;
 }
 
 .secondWhitePicRight img {
@@ -164,7 +190,7 @@ li a:hover{
     width: 25vw;
     min-width: 300px;
     margin-left: 2.5vw;
-    box-shadow: 5px 8px 15px 5px rgba(0,0,0,0.2);
+    box-shadow: 5px 8px 15px 5px rgba(0, 0, 0, 0.2);
 }
 
 .coloredPicAbove {
@@ -173,7 +199,16 @@ li a:hover{
     grid-template-areas: 'bld''tekst1';
     padding: 10vh 25%;
     background-image: linear-gradient(to bottom right, #ff9400, #ffdd00);
-    box-shadow: 0px 0px 16px 8px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 16px 8px rgba(0, 0, 0, 0.2);
+    -webkit-animation: fadein 7s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 7s;
+    /* Firefox < 16 */
+    -ms-animation: fadein 7s;
+    /* Internet Explorer */
+    -o-animation: fadein 7s;
+    /* Opera < 12.1 */
+    animation: fadein 7s;
 }
 
 .coloredPicAbove img {
@@ -182,8 +217,8 @@ li a:hover{
     min-width: 300px;
     margin-left: 7.5vw;
     margin-bottom: 3vh;
-    box-shadow: 5px 8px 15px 5px rgba(0,0,0,0.2);
-    
+    box-shadow: 5px 8px 15px 5px rgba(0, 0, 0, 0.2);
+
 }
 
 footer {
@@ -192,12 +227,12 @@ footer {
     background-color: #243746;
 }
 
-footer a{
+footer a {
     color: #fff;
 }
 
 footer a:hover {
-   color: #e5e5e5;    
+    color: #e5e5e5;
 }
 
 #samlepunktlogo {
@@ -234,26 +269,129 @@ footer a:hover {
     padding: 0px 35%;
 }
 
+/* END OF STYLING FOR FEATURES */
+
+/* STYLING FOR ABONNERINGSBAREN I FOOTEREN */
+
+/* Add some padding and a grey background color to containers */
+.container1 {
+    margin: 0;
+    padding-top: 10px;
+    background-color: #243746;
+}
+
+.container2 {
+    display: grid;
+    margin-top: 5px;
+    margin-right: 40%;
+    padding: 5px 0px;
+    grid-template-areas: 'input knapp'
+}
+
+/* Style the input elements and the submit button */
+input[type=text] {
+    padding: 3% 0px;
+    width: 100%;
+    border: 1px solid #ccc;
+    grid-area: input;
+}
+
+/* Style the submit button */
+input[type=submit] {
+    width: 40%;
+    margin-left: 15px;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ccc;
+    grid-area: knapp;
+}
+
+input[type=submit]:hover {
+    opacity: 0.8;
+}
+/* END OF STYLING FOR SUBSCRIPTION BAR */
+
+
+/* CSS ANIMATIONS */
+section {
+    /* CSS ANIMATION TO MAKE THE CONTENT FADE IN */
+    -webkit-animation: fadein 2s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s;
+    /* Firefox < 16 */
+    -ms-animation: fadein 2s;
+    /* Internet Explorer */
+    -o-animation: fadein 2s;
+    /* Opera < 12.1 */
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0.05;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from {
+        opacity: 0.05;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0.05;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from {
+        opacity: 0.05;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Adaptation for medium sized screens */
 @media screen and (max-width: 1350px) {
     .whitePicRight {
         padding: 3vh 20%;
     }
-    
+
     .coloredPicLeft {
         padding: 15vh 20%;
     }
-    
+
     .secondWhitePicRight {
         padding: 10vh 20%;
     }
 }
+
+/* Adaptation for mobile screens */
 
 @media screen and (max-width:950px) {
 
     .underCover {
         padding: 3vh 15%;
     }
-    
+
     .coloredPicLeft {
         display: grid;
         grid-template-areas: 'image''text';
@@ -264,7 +402,7 @@ footer a:hover {
         padding: 3vh 15%;
         text-align: center;
     }
-    
+
     .whitePicRight img {
         margin-left: 10vw;
         margin-bottom: 20px;
@@ -272,15 +410,15 @@ footer a:hover {
         height: auto;
         min-width: 0px;
     }
-    
+
     .coloredPicLeft {
         text-align: center;
         padding: 10vh 15%;
     }
-    
+
     .coloredPicLeft img {
         width: 50vw;
-        height: auto; 
+        height: auto;
         margin-bottom: 20px;
         margin-left: 9.5vw;
         min-width: 0;
@@ -296,21 +434,21 @@ footer a:hover {
         padding-left: 0vw;
         margin-left: 11vw;
         margin-bottom: 20px;
-        width: 50vw; 
+        width: 50vw;
         height: auto;
         min-width: 0px;
     }
-    
+
     .coloredPicAbove {
         padding: 10vh 15%;
     }
-    
-    .coloredPicAbove img{
+
+    .coloredPicAbove img {
         width: 50vw;
         margin-left: 11vw;
         min-width: 0px;
     }
-    
+
     footer {
         padding: 5vh 15vw;
     }
