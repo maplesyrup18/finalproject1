@@ -81,11 +81,6 @@ body {
     position: absolute;
 }
 
-
-
-
-
-
 #spraak {
     margin-top: 6mm;
     padding: 7px;
@@ -101,11 +96,8 @@ body {
 }
 
 
-
 .navbar-nav li {
     display: inline-block;
-
-
 }
 
 .navbar-nav li a {
@@ -294,9 +286,10 @@ footer a:hover {
 }
 
 .coverphoto img {
-    width: 30%;
+    width: 40%;
     height: auto;
-    margin: 0px 35%;
+    margin: 0px 30%;
+    padding: 3vh 0px;
 }
 
 .introduksjonstekst {
@@ -334,22 +327,26 @@ footer a:hover {
 
 
 .grid2x3 {
-    padding: 2vh 0%;
 }
 
 .gridcombo1{
     display: grid;
     grid-template-areas: 'demo1 bullets1';
+    background: #000;
+    color: #fff;
 }
 
 .gridcombo2 {
     display: grid;
     grid-template-areas: 'bullets2 demo2';
+    background-image: linear-gradient(to bottom right, #ff9400, #ffdd00);
 }
 
 .gridcombo3{
     display: grid;
     grid-template-areas: 'demo3 bullets3';
+    color: #fff;
+    background: #000;
 }
 /* END OF STYLING FOR FEATURES */
 
@@ -636,7 +633,7 @@ input[type=submit]:hover {
     }
 
     .grid2x3 {
-        padding: 2vh 0;
+        padding: 0;
         display: grid;
     }
 
