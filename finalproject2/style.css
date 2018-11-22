@@ -70,10 +70,9 @@ body {
 /* STYLING FOR LOGO IN NAVBAR*/
 #logo {
 
-    margin-top: auto;
     padding: 5px;
     display: inline-block;
-    padding-top: .3125rem;
+    padding-top: 1rem;
     padding-bottom: .3125rem;
     margin-right: 1rem;
     font-size: 1.5rem;
@@ -614,13 +613,19 @@ input[type=submit]:hover {
     .navbar-nav {
     justify-content:flex-start;
     }
+    
+    #logo {
+        margin-left: -2rem;
+        
+    }
 }
 
 
-@media only screen and (max-device-width : 550px) {
+@media only screen and (max-device-width : 600px) {
 
     .navbar-nav {
-        margin-left: -2rem;
+        margin-left:    2rem;
+        justify-content: flex-start;
     }
 
     #logo {
@@ -638,10 +643,20 @@ input[type=submit]:hover {
         max-height: 13mm;
     }
 
-    #spraak {
-        display: none;
-    }
-
+   #spraak {
+    margin-top: 2mm;
+    padding: 3px;
+    display: inline-block;
+    padding-top: .4rem;
+    padding-bottom: .4rem;
+    margin-right: 0mm;
+    font-size: 1rem;
+    line-height: hide;
+    white-space: hide;
+    right: 1rem;
+    position: absolute;
+}
+    
     #nav {
 
         height: 15mm;
