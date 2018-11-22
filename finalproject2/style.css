@@ -70,7 +70,7 @@ body {
 /* STYLING FOR LOGO IN NAVBAR*/
 #logo {
 
-    padding: 5px;
+    padding: 10px;
     display: inline-block;
     padding-top: 1rem;
     padding-bottom: .3125rem;
@@ -79,6 +79,10 @@ body {
     line-height: inherit;
     left : 3rem;
     position: absolute;
+     -webkit-filter: drop-shadow(20px 20px 25px rgb(246, 107, 8));
+    -khtml-box-shadow:  12px 12px 29px #555;
+    -icab-box-shadow:   12px 12px 29px #555;
+    
 }
 
 
@@ -98,6 +102,7 @@ body {
     white-space: nowrap;
     right: 2rem;
     position: absolute;
+    
 }
 
 
@@ -117,8 +122,13 @@ body {
     font-family: Roboto;
     font-size: 20px;
     color: #efffff;
+    text-shadow: 2px 2px 8px #ef6000;
+    
 
 }
+
+
+
 /*END NAVBAR*/
 
 .underCover {
@@ -747,7 +757,8 @@ input[type=submit]:hover {
     }
     
     .navbar-nav {
-        flex-direction: ; 
+        flex-direction: ;
+        margin-left: -2rem; 
     }
     
     .navbar-nav {
