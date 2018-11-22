@@ -69,7 +69,6 @@ body {
 
 /* STYLING FOR LOGO IN NAVBAR*/
 #logo {
-
     margin-top: auto;
     padding: 5px;
     display: inline-block;
@@ -83,18 +82,15 @@ body {
 
 
 
-li {
+.navbar-nav li {
     display: inline-block;
-    
-
 }
 
-ul {
-
+.navbar-nav ul {
     margin: 0;
 }
 
-li a {
+.navbar-nav li a {
     display: inline-block;
     text-align: center;
     padding: 30px;
@@ -102,8 +98,7 @@ li a {
     font-weight: bold;
     font-family: Roboto;
     font-size: 20px;
-    color:  #efffff;
-
+    color: #efffff;
 }
 
 /*END NAVBAR*/
@@ -231,7 +226,6 @@ li a {
     margin-left: 7.5vw;
     margin-bottom: 3vh;
     box-shadow: 5px 8px 15px 5px rgba(0, 0, 0, 0.2);
-
 }
 
 /* END OF STYLING FOR LEFT/RIGHT DIVS */
@@ -282,9 +276,9 @@ footer a:hover {
 }
 
 .coverphoto img {
-    width: 30vw;
+    width: 30%;
     height: auto;
-    padding: 0px 35%;
+    margin: 0px 35%;
 }
 
 .introduksjonstekst {
@@ -295,6 +289,7 @@ footer a:hover {
 
 #demo1 {
     grid-area: demo1;
+    width: 28vw;
 }
 
 .gridbullets1 {
@@ -303,21 +298,33 @@ footer a:hover {
 
 #demo2 {
     grid-area: demo2;
+    width: 28vw;
 }
 
 .gridbullets2 {
     grid-area: bullets2;
 }
 
+#demo3 {
+    grid-area: demo3;
+    width: 28vw;
+}
+
+.gridbullets3 {
+    grid-area: bullets3;
+}
+
+
 .grid3x2 {
     padding: 2vh 10%;
+    display: grid;
+    grid-template-areas: "demo1 demo2 demo3""bullets1 bullets2 bullets3";
 }
 
 /* END OF STYLING FOR FEATURES */
 
 /* STYLING FOR ABONNERINGSBAREN I FOOTEREN */
 
-/* Add some padding and a grey background color to containers */
 .container1 {
     margin: 0;
     padding-top: 10px;
@@ -332,7 +339,6 @@ footer a:hover {
     grid-template-areas: 'input knapp'
 }
 
-/* Style the input elements and the submit button */
 input[type=text] {
     padding: 3% 0px;
     width: 100%;
@@ -340,7 +346,6 @@ input[type=text] {
     grid-area: input;
 }
 
-/* Style the submit button */
 input[type=submit] {
     width: 40%;
     margin-left: 20px;
@@ -596,6 +601,42 @@ input[type=submit]:hover {
         width: 100%;
         margin-left: 20%;
     }
+
+    .grid3x2 {
+        padding: 2vh 0;
+        display: grid;
+        grid-template-areas: "demo1 bullets1""demo2 bullets2""demo3 bullets3";
+    }
+
+    #demo1 {
+        grid-area: demo1;
+        width: 48vw;
+    }
+
+    .gridbullets1 {
+        grid-area: bullets1;
+        padding-top: 50%;
+    }
+
+    #demo2 {
+        grid-area: demo2;
+        width: 48vw;
+    }
+
+    .gridbullets2 {
+        grid-area: bullets2;
+        padding-top: 50%;
+    }
+
+    #demo3 {
+        grid-area: demo3;
+        width: 45vw;
+    }
+
+    .gridbullets3 {
+        grid-area: bullets3;
+        padding-top: 50%;
+    }
 }
 
 
@@ -603,8 +644,6 @@ input[type=submit]:hover {
 
 
     #logo {
-
-
         margin-top: auto;
         padding: 3px;
         display: inline-block;
@@ -618,15 +657,13 @@ input[type=submit]:hover {
     }
 
     #nav {
-
         height: 15mm;
     }
 
 
-    li a {
+    .navbar-nav li a {
         font-size: 18px;
         padding: 4.5mm;
-
     }
 
 }
@@ -635,7 +672,8 @@ input[type=submit]:hover {
     #logo {
         display: none;
     }
-    #venstreli  {
+
+    #venstreli {
         margin-left: -2rem;
     }
 
