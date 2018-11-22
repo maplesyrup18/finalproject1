@@ -81,17 +81,31 @@ body {
     white-space: nowrap
 }
 
+#spraak {
+    margin-top: 6mm;
+    padding: 7px;
+    display: inline-block;
+    padding-top: .4rem;
+    padding-bottom: .4rem;
+    margin-right: 0mm;
+    font-size: 1.5rem;
+    line-height: inherit;
+    white-space: nowrap;
+    right: 2rem;
+    position: absolute;
+}
+
 
 
 li {
     display: inline-block;
-    
+
 
 }
 
 ul {
 
-    margin: 0;
+    
 }
 
 li a {
@@ -102,7 +116,7 @@ li a {
     font-weight: bold;
     font-family: Roboto;
     font-size: 20px;
-    color:  #efffff;
+    color: #efffff;
 
 }
 
@@ -596,11 +610,18 @@ input[type=submit]:hover {
         width: 100%;
         margin-left: 20%;
     }
+    
+    .navbar-nav {
+    justify-content:flex-start;
+    }
 }
 
 
 @media only screen and (max-device-width : 550px) {
 
+    .navbar-nav {
+        margin-left: -2rem;
+    }
 
     #logo {
 
@@ -615,6 +636,10 @@ input[type=submit]:hover {
         line-height: inherit;
         white-space: nowrap;
         max-height: 13mm;
+    }
+
+    #spraak {
+        display: none;
     }
 
     #nav {
@@ -635,8 +660,13 @@ input[type=submit]:hover {
     #logo {
         display: none;
     }
-    #venstreli  {
+
+    .navbar-nav {
         margin-left: -2rem;
+    }
+
+    #spraak {
+        display: none;
     }
 
 }
