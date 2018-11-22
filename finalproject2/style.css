@@ -1,6 +1,7 @@
 * {
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    word-break: break-word;
 }
 
 body {
@@ -332,12 +333,24 @@ footer a:hover {
 }
 
 
-.grid3x2 {
-    padding: 2vh 10%;
-    display: grid;
-    grid-template-areas: "demo1 demo2 demo3""bullets1 bullets2 bullets3";
+.grid2x3 {
+    padding: 2vh 0%;
 }
 
+.gridcombo1{
+    display: grid;
+    grid-template-areas: 'demo1 bullets1';
+}
+
+.gridcombo2 {
+    display: grid;
+    grid-template-areas: 'bullets2 demo2';
+}
+
+.gridcombo3{
+    display: grid;
+    grid-template-areas: 'demo3 bullets3';
+}
 /* END OF STYLING FOR FEATURES */
 
 /* STYLING FOR ABONNERINGSBAREN I FOOTEREN */
@@ -622,50 +635,48 @@ input[type=submit]:hover {
         margin-left: 20%;
     }
 
-    .grid3x2 {
+    .grid2x3 {
         padding: 2vh 0;
         display: grid;
-        grid-template-areas: "demo1 bullets1""demo2 bullets2""demo3 bullets3";
     }
 
     #demo1 {
-        grid-area: demo1;
-        width: 48vw;
+        width: 40vw;
     }
 
     .gridbullets1 {
-        grid-area: bullets1;
-        padding-top: 50%;
+        
     }
 
     #demo2 {
-        grid-area: demo2;
-        width: 48vw;
+        
+        width: 40vw;
     }
 
     .gridbullets2 {
-        grid-area: bullets2;
-        padding-top: 50%;
+        
     }
 
     #demo3 {
-        grid-area: demo3;
-        width: 45vw;
+        width: 40vw;
     }
 
     .gridbullets3 {
-        grid-area: bullets3;
-        padding-top: 50%;
     }
-  
-    .navbar-nav {
-    
+
+    .gridcombo1 {
+        grid-template-areas: 'demo1' 'bullets1';
     }
     
-    #logo {
-        
-        
+    .gridcombo2 {
+        grid-template-areas: 'demo2' 'bullets2';
     }
+    
+    .gridcombo3 {
+        grid-template-areas: 'demo3' 'bullets3';
+    }
+    
+
 }
 
 
