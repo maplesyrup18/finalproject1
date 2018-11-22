@@ -39,15 +39,11 @@ body {
 .nice {
     grid-area: text;
 }
+
 /* END FOR GRID AREA CONTAINERS */
 
-/* STYLING FOR LOGO IN NAVBAR*/
-#logo {
-    display: inline-block;
-    float: left;
-    position: relative;
-    padding-top: 16px;
-}
+
+
 
 #background {
     background-image: url("./bilder/proxy.duckduckgo.com.jpeg");
@@ -57,47 +53,57 @@ body {
 }
 
 /* STYLING NAVBAR */
-#navbar {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    vertical-align: top;
 }
 
-#navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-#sentrer {
-    width: 100%;
+#nav {
     background-image: linear-gradient(to bottom right, #ff9400, #ffdd00);
-    margin: auto;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    height: 22mm;
 }
 
-#navbar li {
-    float: left;
+/* STYLING FOR LOGO IN NAVBAR*/
+#logo {
+
+    margin-top: auto;
+    padding: 5px;
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    line-height: inherit;
+    white-space: nowrap
+}
+
+
+
+li {
+    display: inline-block;
+    
+
+}
+
+ul {
+
+    margin: 0;
 }
 
 li a {
     display: inline-block;
-    color: black;
     text-align: center;
-    padding: 30px 2.5vw;
+    padding: 30px;
     text-decoration: none;
     font-weight: bold;
     font-family: Roboto;
     font-size: 20px;
-    color: #fff;
-}
+    color:  #efffff;
 
-li a:hover {
-    text-decoration: underline;
-}
-
-#navbar li {
-    display: inline-block;
 }
 
 /*END NAVBAR*/
@@ -227,6 +233,7 @@ li a:hover {
     box-shadow: 5px 8px 15px 5px rgba(0, 0, 0, 0.2);
 
 }
+
 /* END OF STYLING FOR LEFT/RIGHT DIVS */
 
 /* STYLING FOR FOOTER */
@@ -265,6 +272,7 @@ footer a:hover {
     margin-top: 10px;
     padding-right: 2px;
 }
+
 /* END OF STYLING FOR FOOTER */
 
 /* CSS EXCLUSIVE FOR FEATURES */
@@ -301,7 +309,7 @@ footer a:hover {
     grid-area: bullets2;
 }
 
-.grid3x2{
+.grid3x2 {
     padding: 2vh 10%;
 }
 
@@ -345,6 +353,7 @@ input[type=submit] {
 input[type=submit]:hover {
     opacity: 0.8;
 }
+
 /* END OF STYLING FOR SUBSCRIPTION BAR */
 
 
@@ -352,7 +361,7 @@ input[type=submit]:hover {
 
 @keyframes fadein {
     0% {
-        opacity: 0.05; 
+        opacity: 0.05;
     }
 
     100% {
@@ -444,6 +453,7 @@ input[type=submit]:hover {
         transform: translateX(0);
     }
 }
+
 /* END OF CSS ANIMATIONS FOR SLIDE RIGHT + FADE IN */
 
 /* CSS ANIMATION FOR SLIDE IN FROM LEFT AND FADE IN */
@@ -581,12 +591,52 @@ input[type=submit]:hover {
     footer {
         padding: 5vh 15vw;
     }
-    
+
     input[type=submit] {
-    width: 100%;
-    margin-left: 20%;
+        width: 100%;
+        margin-left: 20%;
     }
 }
 
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {}
+@media only screen and (max-device-width : 550px) {
+
+
+    #logo {
+
+
+        margin-top: auto;
+        padding: 3px;
+        display: inline-block;
+        padding-top: .2125rem;
+        padding-bottom: .2125rem;
+        margin-left: -4rem;
+        font-size: .7rem;
+        line-height: inherit;
+        white-space: nowrap;
+        max-height: 13mm;
+    }
+
+    #nav {
+
+        height: 15mm;
+    }
+
+
+    li a {
+        font-size: 18px;
+        padding: 4.5mm;
+
+    }
+
+}
+
+@media only screen and (max-device-width : 400px) {
+    #logo {
+        display: none;
+    }
+    #venstreli  {
+        margin-left: -2rem;
+    }
+
+}
