@@ -59,7 +59,6 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
-    vertical-align: top;
 }
 
 #nav {
@@ -78,8 +77,14 @@ body {
     margin-right: 1rem;
     font-size: 1.5rem;
     line-height: inherit;
-    white-space: nowrap
+    left : 3rem;
+    position: absolute;
 }
+
+
+
+
+
 
 #spraak {
     margin-top: 6mm;
@@ -97,18 +102,13 @@ body {
 
 
 
-li {
+.navbar-nav li {
     display: inline-block;
 
 
 }
 
-ul {
-
-    
-}
-
-li a {
+.navbar-nav li a {
     display: inline-block;
     text-align: center;
     padding: 30px;
@@ -119,8 +119,6 @@ li a {
     color: #efffff;
 
 }
-
-
 /*END NAVBAR*/
 
 .underCover {
@@ -563,6 +561,9 @@ input[type=submit]:hover {
 /* Adaptation for mobile screens */
 
 @media screen and (max-width:950px) {
+    
+    
+    
 
     .underCover {
         padding: 3vh 15%;
@@ -675,35 +676,31 @@ input[type=submit]:hover {
         grid-template-areas: 'demo3' 'bullets3';
     }
     
-        .navbar-nav {
-    justify-content:flex-start;
-    }
-    
-    #logo {
-        margin-left: -2rem;
-        
-    }
+
 }
 
 
 @media only screen and (max-device-width : 600px) {
 
     .navbar-nav {
-        margin-left:    2rem;
-        justify-content: flex-start;
+        
+        justify-content: center;
     }
 
     #logo {
+
+
         margin-top: auto;
         padding: 3px;
         display: inline-block;
         padding-top: .2125rem;
         padding-bottom: .2125rem;
-        margin-left: -4rem;
+        left:    2rem;
         font-size: .7rem;
         line-height: inherit;
         white-space: nowrap;
         max-height: 13mm;
+        position: absolute;
     }
 
    #spraak {
@@ -720,25 +717,49 @@ input[type=submit]:hover {
     position: absolute;
 }
     
+    
+    
     #nav {
+
         height: 15mm;
     }
 
 
-    .navbar-nav li a {
+   .navbar-nav li a {
         font-size: 18px;
         padding: 4.5mm;
+
     }
 
+}
+@media only screen and (max-device-width : 490px) {
+    
+    #spraak {
+        display: none;
+    }
+    #logo {
+        display: none;
+        margin-left: -4rem;
+    }
+     #nav {
+
+        height: 15mm;
+    }
+    
+    .navbar-nav {
+        flex-direction: ; 
+    }
+    
+    .navbar-nav {
+        
+    }
+
+    
 }
 
 @media only screen and (max-device-width : 400px) {
     #logo {
         display: none;
-    }
-    
-    #venstreli {
-        margin-left: -2rem;
     }
 
     .navbar-nav {
