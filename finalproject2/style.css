@@ -77,8 +77,9 @@ body {
     margin-right: 1rem;
     font-size: 1.5rem;
     line-height: inherit;
-    white-space: nowrap
 }
+
+
 
 #spraak {
     margin-top: 6mm;
@@ -96,18 +97,13 @@ body {
 
 
 
-li {
+.navbar-nav li {
     display: inline-block;
 
 
 }
 
-ul {
-
-    
-}
-
-li a {
+.navbar-nav li a {
     display: inline-block;
     text-align: center;
     padding: 30px;
@@ -118,8 +114,6 @@ li a {
     color: #efffff;
 
 }
-
-
 /*END NAVBAR*/
 
 .underCover {
@@ -656,7 +650,8 @@ input[type=submit]:hover {
         grid-area: bullets3;
         padding-top: 50%;
     }
-        .navbar-nav {
+  
+    .navbar-nav {
     justify-content:flex-start;
     }
     
@@ -675,6 +670,8 @@ input[type=submit]:hover {
     }
 
     #logo {
+
+
         margin-top: auto;
         padding: 3px;
         display: inline-block;
@@ -702,24 +699,33 @@ input[type=submit]:hover {
 }
     
     #nav {
+
         height: 15mm;
     }
 
 
-    .navbar-nav li a {
+   .navbar-nav li a {
         font-size: 18px;
         padding: 4.5mm;
+
     }
 
+}
+@media only screen and (max-device-width : 500px) {
+    
+    #spraak {
+        display: none;
+    }
+    #logo {
+        display: none;
+    }
+   
+    
 }
 
 @media only screen and (max-device-width : 400px) {
     #logo {
         display: none;
-    }
-    
-    #venstreli {
-        margin-left: -2rem;
     }
 
     .navbar-nav {
