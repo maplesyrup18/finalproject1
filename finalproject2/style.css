@@ -58,7 +58,6 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
-    vertical-align: top;
 }
 
 #nav {
@@ -77,7 +76,12 @@ body {
     margin-right: 1rem;
     font-size: 1.5rem;
     line-height: inherit;
+    left : 3rem;
+    position: absolute;
 }
+
+
+
 
 
 
@@ -544,6 +548,9 @@ input[type=submit]:hover {
 /* Adaptation for mobile screens */
 
 @media screen and (max-width:950px) {
+    
+    
+    
 
     .underCover {
         padding: 3vh 15%;
@@ -652,11 +659,11 @@ input[type=submit]:hover {
     }
   
     .navbar-nav {
-    justify-content:flex-start;
+    
     }
     
     #logo {
-        margin-left: -2rem;
+        
         
     }
 }
@@ -665,8 +672,8 @@ input[type=submit]:hover {
 @media only screen and (max-device-width : 600px) {
 
     .navbar-nav {
-        margin-left:    2rem;
-        justify-content: flex-start;
+        
+        justify-content: center;
     }
 
     #logo {
@@ -677,11 +684,12 @@ input[type=submit]:hover {
         display: inline-block;
         padding-top: .2125rem;
         padding-bottom: .2125rem;
-        margin-left: -4rem;
+        left:    2rem;
         font-size: .7rem;
         line-height: inherit;
         white-space: nowrap;
         max-height: 13mm;
+        position: absolute;
     }
 
    #spraak {
@@ -698,6 +706,8 @@ input[type=submit]:hover {
     position: absolute;
 }
     
+    
+    
     #nav {
 
         height: 15mm;
@@ -711,15 +721,28 @@ input[type=submit]:hover {
     }
 
 }
-@media only screen and (max-device-width : 500px) {
+@media only screen and (max-device-width : 490px) {
     
     #spraak {
         display: none;
     }
     #logo {
         display: none;
+        margin-left: -4rem;
     }
-   
+     #nav {
+
+        height: 15mm;
+    }
+    
+    .navbar-nav {
+        flex-direction: ; 
+    }
+    
+    .navbar-nav {
+        
+    }
+
     
 }
 
