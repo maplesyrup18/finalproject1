@@ -84,12 +84,6 @@ body {
     -icab-box-shadow:   12px 12px 29px #555;
     
 }
-
-
-
-
-
-
 #spraak {
     margin-top: 6mm;
     padding: 7px;
@@ -113,17 +107,20 @@ body {
 
 }
 
-.navbar-nav li a {
-    display: inline-block;
-    text-align: center;
-    padding: 30px;
-    text-decoration: none;
+#right, #left, #middle {
+    
+   text-decoration: none;
     font-weight: bold;
     font-family: Roboto;
-    font-size: 20px;
+    font-size: 1.2rem;
     color: #efffff;
-    text-shadow: 2px 2px 8px #ef6000;
+    text-shadow: 2px 2px 8px #ef6000;  
     
+}
+
+.navbar-nav li a {
+    display: inline-block;
+    padding: 30px;
 
 }
 
@@ -689,8 +686,7 @@ input[type=submit]:hover {
 
 }
 
-
-@media only screen and (max-device-width : 600px) {
+@media screen and (min-device-width: 490px) and (max-device-width: 600px) {
 
     .navbar-nav {
         
@@ -705,7 +701,7 @@ input[type=submit]:hover {
         display: inline-block;
         padding-top: .2125rem;
         padding-bottom: .2125rem;
-        left:    2rem;
+        left:    1rem;
         font-size: .7rem;
         line-height: inherit;
         white-space: nowrap;
@@ -744,41 +740,81 @@ input[type=submit]:hover {
 }
 @media only screen and (max-device-width : 490px) {
     
-    #spraak {
-        display: none;
-    }
-    #logo {
-        display: none;
-        margin-left: -4rem;
-    }
+  
      #nav {
 
-        height: 15mm;
+        height: 10.7rem;
     }
     
     .navbar-nav {
-        flex-direction: ;
+        flex-direction:column;
         margin-left: -2rem; 
     }
     
-    .navbar-nav {
-        
-    }
+    #logo {
 
+    padding: 0px;
+    padding-top: 1rem;
+    padding-bottom: .3125rem;
+    
+    font-size: 1.5rem;
+    right: 1rem;
+    top: 0.5rem;
+    position: absolute;
+    margin-right: auto;
+    left: auto;
+    -webkit-filter: drop-shadow(20px 20px 25px rgb(245, 0, 0));
+    
+        
+     
+    
+}
+
+
+
+
+
+
+#spraak {
+    
+    right: 2.2rem;
+    top: 5.5rem;
+    padding: 7px;
+    display: inline-block;
+    padding-top: .4rem;
+    padding-bottom: .4rem;
+    font-size: 1.5rem;
+    line-height: inherit;
+    white-space: nowrap;
+    
+    
+    
+}
+    
+
+.navbar-nav li a {
+        font-size: 18px;
+        padding: 4.5mm;
+
+    }
+  
+
+ 
+
+    
+    
+    
+    
+    
     
 }
 
 @media only screen and (max-device-width : 400px) {
-    #logo {
-        display: none;
-    }
+   
 
     .navbar-nav {
         margin-left: -2rem;
     }
 
-    #spraak {
-        display: none;
-    }
-
+   
 }
