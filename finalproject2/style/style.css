@@ -47,10 +47,11 @@ body {
 
 
 #background {
-    background-image: url("./bilder/proxy.duckduckgo.com.jpeg");
+    background-image: url("../bilder/proxy.duckduckgo.com.jpeg");
     background-size: cover;
     background-position: center;
     height: 700px;
+
 }
 
 /* STYLING NAVBAR */
@@ -59,6 +60,8 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
+    margin-left: -6rem;
+
 }
 
 #nav {
@@ -68,22 +71,26 @@ body {
 }
 
 /* STYLING FOR LOGO IN NAVBAR*/
-#logo {
+#logo0 {
 
     padding: 10px;
     display: inline-block;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
     padding-bottom: .3125rem;
     margin-right: 1rem;
     font-size: 1.5rem;
     line-height: inherit;
-    left : 3rem;
+    left: 3rem;
     position: absolute;
-     -webkit-filter: drop-shadow(20px 20px 25px rgb(246, 107, 8));
-    -khtml-box-shadow:  12px 12px 29px #555;
-    -icab-box-shadow:   12px 12px 29px #555;
-    
+    -webkit-filter: drop-shadow(20px 20px 25px rgb(245, 0, 0));
+
+
 }
+
+#logo {
+    visibility: hidden;
+}
+
 #spraak {
     margin-top: 6mm;
     padding: 7px;
@@ -96,9 +103,8 @@ body {
     white-space: nowrap;
     right: 2rem;
     position: absolute;
-    
-}
 
+}
 
 
 .navbar-nav li {
@@ -107,20 +113,25 @@ body {
 
 }
 
-#right, #left, #middle {
-    
-   text-decoration: none;
+
+
+#right,
+#left,
+#middle {
+
+    text-decoration: none;
     font-weight: bold;
     font-family: Roboto;
     font-size: 1.2rem;
     color: #efffff;
-    text-shadow: 2px 2px 8px #ef6000;  
-    
+    text-shadow: 2px 2px 8px #ef6000;
+
 }
 
 .navbar-nav li a {
     display: inline-block;
     padding: 30px;
+
 
 }
 
@@ -344,7 +355,7 @@ footer a:hover {
     padding: 2vh 0%;
 }
 
-.gridcombo1{
+.gridcombo1 {
     display: grid;
     grid-template-areas: 'demo1 bullets1';
 }
@@ -354,10 +365,11 @@ footer a:hover {
     grid-template-areas: 'bullets2 demo2';
 }
 
-.gridcombo3{
+.gridcombo3 {
     display: grid;
     grid-template-areas: 'demo3 bullets3';
 }
+
 /* END OF STYLING FOR FEATURES */
 
 /* STYLING FOR ABONNERINGSBAREN I FOOTEREN */
@@ -568,9 +580,9 @@ input[type=submit]:hover {
 /* Adaptation for mobile screens */
 
 @media screen and (max-width:950px) {
-    
-    
-    
+
+
+
 
     .underCover {
         padding: 3vh 15%;
@@ -651,46 +663,44 @@ input[type=submit]:hover {
         width: 40vw;
     }
 
-    .gridbullets1 {
-        
-    }
+    .gridbullets1 {}
 
     #demo2 {
-        
+
         width: 40vw;
     }
 
-    .gridbullets2 {
-        
-    }
+    .gridbullets2 {}
 
     #demo3 {
         width: 40vw;
     }
 
-    .gridbullets3 {
-    }
+    .gridbullets3 {}
 
     .gridcombo1 {
-        grid-template-areas: 'demo1' 'bullets1';
+        grid-template-areas: 'demo1''bullets1';
     }
-    
+
     .gridcombo2 {
-        grid-template-areas: 'demo2' 'bullets2';
+        grid-template-areas: 'demo2''bullets2';
     }
-    
+
     .gridcombo3 {
-        grid-template-areas: 'demo3' 'bullets3';
+        grid-template-areas: 'demo3''bullets3';
     }
-    
+
 
 }
 
-@media screen and (min-device-width: 490px) and (max-device-width: 600px) {
+
+
+@media screen and (min-device-width: 471px) and (max-device-width: 720px) {
 
     .navbar-nav {
-        
+
         justify-content: center;
+        margin-left: -1rem;
     }
 
     #logo {
@@ -701,120 +711,115 @@ input[type=submit]:hover {
         display: inline-block;
         padding-top: .2125rem;
         padding-bottom: .2125rem;
-        left:    1rem;
+        left: 1rem;
         font-size: .7rem;
         line-height: inherit;
         white-space: nowrap;
         max-height: 13mm;
         position: absolute;
+        visibility: visible;
+
+        margin-right: 1rem;
+
+        -webkit-filter: drop-shadow(20px 20px 25px rgb(245, 0, 0));
+
+
     }
 
-   #spraak {
-    margin-top: 2mm;
-    padding: 3px;
-    display: inline-block;
-    padding-top: .4rem;
-    padding-bottom: .4rem;
-    margin-right: 0mm;
-    font-size: 1rem;
-    line-height: hide;
-    white-space: hide;
-    right: 1rem;
-    position: absolute;
-}
-    
-    
-    
+    #logo0 {
+        display: none;
+    }
+
+
+
+    #spraak {
+        margin-top: 2mm;
+        padding: 3px;
+        display: inline-block;
+        padding-top: .4rem;
+        padding-bottom: .4rem;
+        margin-right: 0mm;
+        font-size: 1rem;
+        line-height: hide;
+        white-space: hide;
+        right: 1rem;
+        position: absolute;
+    }
+
+
+
     #nav {
 
         height: 15mm;
     }
 
 
-   .navbar-nav li a {
+    .navbar-nav li a {
         font-size: 18px;
         padding: 4.5mm;
 
     }
 
 }
-@media only screen and (max-device-width : 490px) {
-    
-  
-     #nav {
+
+@media only screen and (max-device-width : 470px) {
+
+
+    #nav {
 
         height: 10.7rem;
     }
-    
+
     .navbar-nav {
-        flex-direction:column;
-        margin-left: -2rem; 
+        flex-direction: column;
+        margin-left: -2rem;
     }
-    
+
     #logo {
 
-    padding: 0px;
-    padding-top: 1rem;
-    padding-bottom: .3125rem;
-    
-    font-size: 1.5rem;
-    right: 1rem;
-    top: 0.5rem;
-    position: absolute;
-    margin-right: auto;
-    left: auto;
-    -webkit-filter: drop-shadow(20px 20px 25px rgb(245, 0, 0));
-    
-        
-     
-    
-}
+        padding: 0px;
+        padding-top: 1rem;
+        padding-bottom: .3125rem;
+
+        font-size: 1.5rem;
+        right: 1.6rem;
+        top: 0.5rem;
+        position: absolute;
+        margin-right: auto;
+        left: auto;
+        -webkit-filter: drop-shadow(20px 20px 25px rgb(245, 0, 0));
+        visibility: visible;
+
+    }
+
+
+    #logo0 {
+        display: none;
+    }
+
+
+    #spraak {
+
+        right: 2.2rem;
+        top: 5.5rem;
+        padding: 7px;
+        display: inline-block;
+        padding-top: .4rem;
+        padding-bottom: .4rem;
+        font-size: 1.5rem;
+        line-height: inherit;
+        white-space: nowrap;
 
 
 
+    }
 
 
-
-#spraak {
-    
-    right: 2.2rem;
-    top: 5.5rem;
-    padding: 7px;
-    display: inline-block;
-    padding-top: .4rem;
-    padding-bottom: .4rem;
-    font-size: 1.5rem;
-    line-height: inherit;
-    white-space: nowrap;
-    
-    
-    
-}
-    
-
-.navbar-nav li a {
+    .navbar-nav li a {
         font-size: 18px;
         padding: 4.5mm;
 
     }
-  
 
- 
 
-    
-    
-    
-    
-    
-    
-}
-
-@media only screen and (max-device-width : 400px) {
-   
-
-    .navbar-nav {
-        margin-left: -2rem;
-    }
-
-   
 }
