@@ -46,72 +46,126 @@ body {
 
 /* STYLING NAVBAR */
 
-.navbar-nav {
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
-    margin-left: -6rem;
-
-}
-
-#nav {
+#navbar {
     background-image: linear-gradient(to bottom right, #ff9400, #ffdd00);
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     height: 22mm;
+    margin: 0;
+    padding-left: 30%;
+    z-index: 0;
 }
 
-/* STYLING FOR LOGO IN NAVBAR*/
-#logo0 {
+#logo {
     padding: 10px;
     display: inline-block;
-    padding-top: 0.5rem;
+    padding-top: 0;
+    padding-left: 50px;
     padding-bottom: .3125rem;
     margin-right: 1rem;
     font-size: 1.5rem;
     line-height: inherit;
     left: 3rem;
     position: absolute;
-    -webkit-filter: drop-shadow(20px 20px 25px rgb(245, 0, 0));
+    -webkit-filter: drop-shadow(20px 20px 25px rgb(0, 0, 0));
+    height: 20mm;
 }
 
-#logo {
-    visibility: hidden;
-}
-
-#spraak {
-    margin-top: 6mm;
-    padding: 7px;
-    display: inline-block;
-    padding-top: .4rem;
-    padding-bottom: .4rem;
-    margin-right: 0mm;
+#logo2 {
+    padding: 10px;
+    display: none;
+    padding-top: 0;
+    padding-left: 0;
+    margin: 0;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
     font-size: 1.5rem;
     line-height: inherit;
-    white-space: nowrap;
-    right: 2rem;
-    position: absolute;
+    left: 3rem;
+
+    -webkit-filter: drop-shadow(20px 20px 25px rgb(0, 0, 0));
+    height: 20mm;
 }
 
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 
-.navbar-nav li {
+#navbar li {
+    float: left;
+}
+
+#navbar li a {
     display: inline-block;
-}
-
-
-#right,
-#left,
-#middle {
     text-decoration: none;
     font-weight: bold;
     font-family: Roboto;
     font-size: 1.2rem;
     color: #efffff;
     text-shadow: 2px 2px 8px #ef6000;
+    padding: 30px 70px 0px 10px;
+
 }
 
-.navbar-nav li a {
+.big_menu li {
+    padding-left: 5%;
+}
+
+.dropbtn {
+    height: 22mm;
+    padding-left: 30px;
+    display: none;
+    padding
+}
+
+#navbar li a:hover,
+.dropdown:hover .dropbtn {
+    color: #243746;
+}
+
+#navbar li.dropdown {
     display: inline-block;
-    padding: 30px;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+
+    text-align: center;
+}
+
+.dropdown-content a:hover {
+    background-color: #243746;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    width: 80%;
+
+}
+
+#english {
+    height: 12mm;
+    padding-top: 18px;
+    position: relative;
+    float: right;
+    right: 10%;
+
 }
 
 /*END NAVBAR*/
@@ -119,7 +173,11 @@ body {
 
 /* Index.html elementer*/
 
-.covervideo video{
+.covervideo {
+    z-index: 1;
+}
+
+.covervideo video {
     width: 100%;
 }
 
@@ -147,6 +205,7 @@ body {
 .whitePicRight {
     text-align: left;
     padding: 3vh 25%;
+    padding-bottom: 5vh;
     display: grid;
     grid-template-areas: 'schmenis img';
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -203,7 +262,7 @@ body {
     text-align: left;
     display: grid;
     grid-template-areas: 'tekst bilde';
-    padding: 10vh 25%;
+    padding: 20vh 25%;
     padding-bottom: 15vh;
     -webkit-animation: fadeinright 7s;
     /* Safari, Chrome and Opera > 12.1 */
@@ -408,9 +467,6 @@ input[type=submit]:hover {
     color: #333333;
     background-color: #E2E2E2;
 }
-
-
-
 
 .kolonnerekkefolge {
     display: flex;
@@ -693,137 +749,54 @@ input[type=submit]:hover {
         width: 100%;
         margin-left: 20%;
     }
+
+    .dropbtn {
+        display: block;
+    }
+
+    .big_menu {
+        display: none;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    #logo2 {
+        display: inline-block;
+        padding-top: 0.3rem;
+        position: relative;
+        left: 20%;
+    }
+
+    #navbar {
+        padding-left: 5%;
+    }
+
+    #english {
+        padding-right: 15%;
+        right: 0%;
+    }
 }
 
 
 
 
 
-@media screen and (min-device-width: 471px) and (max-width: 720px) {
 
-
-
-    /*Nav,  styling av nav*/
-
-    .navbar-nav {
-
-        justify-content: center;
-        margin-left: -1rem;
+@media screen and (max-width: 450px) {
+    #logo2 {
+        left: 5%;
     }
 
-    #logo {
-        margin-top: auto;
-        padding: 3px;
-        display: inline-block;
-        padding-top: .2125rem;
-        padding-bottom: .2125rem;
-        left: 1rem;
-        font-size: .7rem;
-        line-height: inherit;
-        white-space: nowrap;
-        max-height: 13mm;
-        position: absolute;
-        visibility: visible;
-
-        margin-right: 1rem;
-
-        -webkit-filter: drop-shadow(20px 20px 25px rgb(245, 0, 0));
+    .dropbtn {
+        height: 11mm;
+        padding-top: 20px;
     }
 
-    #logo0 {
-        display: none;
+    #navbar {
+        padding-left: 1%;
     }
-
-
-
-    #spraak {
-        margin-top: 2mm;
-        padding: 3px;
-        display: inline-block;
-        padding-top: .4rem;
-        padding-bottom: .4rem;
-        margin-right: 0mm;
-        font-size: 1rem;
-        line-height: hide;
-        white-space: hide;
-        right: 1rem;
-        position: absolute;
-    }
-
-
-
-    #nav {
-
-        height: 15mm;
-    }
-
-
-    .navbar-nav li a {
-        font-size: 18px;
-        padding: 4.5mm;
-
-    }
-
-}
-
-/* SLUTT, Nav,  styling av nav*/
-
-@media only screen and (max-width: 470px) {
-
-    /*Nav,  styling av nav*/
-
-    #nav {
-
-        height: 10.7rem;
-    }
-
-    .navbar-nav {
-        flex-direction: column;
-        margin-left: -2rem;
-    }
-
-    #logo {
-
-        padding: 0px;
-        padding-top: 1rem;
-        padding-bottom: .3125rem;
-
-        font-size: 1.5rem;
-        right: 1.6rem;
-        top: 0.5rem;
-        position: absolute;
-        margin-right: auto;
-        left: auto;
-        -webkit-filter: drop-shadow(20px 20px 25px rgb(245, 0, 0));
-        visibility: visible;
-
-    }
-
-
-    #logo0 {
-        display: none;
-    }
-
-    #spraak {
-
-        right: 2.2rem;
-        top: 5.5rem;
-        padding: 7px;
-        display: inline-block;
-        padding-top: .4rem;
-        padding-bottom: .4rem;
-        font-size: 1.5rem;
-        line-height: inherit;
-        white-space: nowrap;
-
-    }
-
-    .navbar-nav li a {
-        font-size: 18px;
-        padding: 4.5mm;
-
-    }
-
 }
 
 /*Slutt, Nav,  styling av nav*/
