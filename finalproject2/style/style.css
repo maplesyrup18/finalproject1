@@ -43,12 +43,6 @@ body {
 
 /* END FOR GRID AREA CONTAINERS */
 
-#background {
-    background-image: url("../bilder/proxy.duckduckgo.com.jpeg");
-    background-size: cover;
-    background-position: center;
-    height: 700px;
-}
 
 /* STYLING NAVBAR */
 
@@ -68,7 +62,6 @@ body {
 
 /* STYLING FOR LOGO IN NAVBAR*/
 #logo0 {
-
     padding: 10px;
     display: inline-block;
     padding-top: 0.5rem;
@@ -79,8 +72,6 @@ body {
     left: 3rem;
     position: absolute;
     -webkit-filter: drop-shadow(20px 20px 25px rgb(245, 0, 0));
-
-
 }
 
 #logo {
@@ -99,41 +90,38 @@ body {
     white-space: nowrap;
     right: 2rem;
     position: absolute;
-
 }
 
 
 .navbar-nav li {
     display: inline-block;
-
-
 }
 
 
 #right,
 #left,
 #middle {
-
     text-decoration: none;
     font-weight: bold;
     font-family: Roboto;
     font-size: 1.2rem;
     color: #efffff;
     text-shadow: 2px 2px 8px #ef6000;
-
 }
 
 .navbar-nav li a {
     display: inline-block;
     padding: 30px;
-
-
 }
 
 /*END NAVBAR*/
 
 
 /* Index.html elementer*/
+
+.covervideo video{
+    width: 100%;
+}
 
 .underCover {
     text-align: center;
@@ -304,72 +292,6 @@ footer a:hover {
 
 /* END OF STYLING FOR FOOTER */
 
-/* CSS EXCLUSIVE FOR FEATURES */
-
-.coverphoto {
-    background-color: #000;
-}
-
-.coverphoto img {
-    width: 30%;
-    height: auto;
-    margin: 0px 35%;
-}
-
-.introduksjonstekst {
-    padding: 5vh 20%;
-    text-align: center;
-    background-image: linear-gradient(to bottom right, #ff9400, #ffdd00);
-}
-
-#demo1 {
-    grid-area: demo1;
-    width: 28vw;
-}
-
-.gridbullets1 {
-    grid-area: bullets1;
-}
-
-#demo2 {
-    grid-area: demo2;
-    width: 28vw;
-}
-
-.gridbullets2 {
-    grid-area: bullets2;
-}
-
-#demo3 {
-    grid-area: demo3;
-    width: 28vw;
-}
-
-.gridbullets3 {
-    grid-area: bullets3;
-}
-
-
-.grid2x3 {
-    padding: 2vh 0%;
-}
-
-.gridcombo1 {
-    display: grid;
-    grid-template-areas: 'demo1 bullets1';
-}
-
-.gridcombo2 {
-    display: grid;
-    grid-template-areas: 'bullets2 demo2';
-}
-
-.gridcombo3 {
-    display: grid;
-    grid-template-areas: 'demo3 bullets3';
-}
-
-/* END OF STYLING FOR FEATURES */
 
 /* STYLING FOR ABONNERINGSBAREN I FOOTEREN */
 
@@ -424,9 +346,6 @@ input[type=submit]:hover {
     margin: auto;
     width: 80%;
     background-color: azure;
-
-
-
 }
 
 #omoss #team ul {
@@ -434,7 +353,6 @@ input[type=submit]:hover {
     padding: 0;
     list-style: none;
     margin-bottom: 3rem;
-
 }
 
 #omoss #team ul li {
@@ -498,13 +416,11 @@ input[type=submit]:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 }
 
 .split-ul {
     display: flex;
     flex-direction: row;
-
 }
 
 .split {
@@ -514,12 +430,10 @@ input[type=submit]:hover {
 }
 
 .left {
-
     background-color: #ff9933;
 }
 
 .right {
-
     background-color: cadetblue;
 }
 
@@ -710,10 +624,6 @@ input[type=submit]:hover {
 /* Adaptation for mobile screens */
 
 @media screen and (max-width:950px) {
-
-
-
-
     .underCover {
         padding: 3vh 15%;
     }
@@ -783,44 +693,6 @@ input[type=submit]:hover {
         width: 100%;
         margin-left: 20%;
     }
-
-    .grid2x3 {
-        padding: 2vh 0;
-        display: grid;
-    }
-
-    #demo1 {
-        width: 40vw;
-    }
-
-    .gridbullets1 {}
-
-    #demo2 {
-
-        width: 40vw;
-    }
-
-    .gridbullets2 {}
-
-    #demo3 {
-        width: 40vw;
-    }
-
-    .gridbullets3 {}
-
-    .gridcombo1 {
-        grid-template-areas: 'demo1''bullets1';
-    }
-
-    .gridcombo2 {
-        grid-template-areas: 'demo2''bullets2';
-    }
-
-    .gridcombo3 {
-        grid-template-areas: 'demo3''bullets3';
-    }
-
-
 }
 
 
@@ -840,8 +712,6 @@ input[type=submit]:hover {
     }
 
     #logo {
-
-
         margin-top: auto;
         padding: 3px;
         display: inline-block;
@@ -858,8 +728,6 @@ input[type=submit]:hover {
         margin-right: 1rem;
 
         -webkit-filter: drop-shadow(20px 20px 25px rgb(245, 0, 0));
-
-
     }
 
     #logo0 {
