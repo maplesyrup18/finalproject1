@@ -431,10 +431,12 @@ input[type=submit]:hover {
 
 .left {
     background-color: #ff9933;
+    margin-right: 0.5rem;
 }
 
 .right {
     background-color: cadetblue;
+    margin-left: 0.5rem;
 }
 
 @media screen and (max-width:950px) {
@@ -449,6 +451,15 @@ input[type=submit]:hover {
         width: 100%;
 
     }
+    .left {
+    background-color: white;
+    margin-right: 0rem;
+}
+
+.right {
+    background-color: black;
+    margin-left: 0rem;
+}
 
 }
 
