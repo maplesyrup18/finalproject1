@@ -1,0 +1,339 @@
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-left: -6rem;
+
+}
+
+#nav {
+    background-image: linear-gradient(to bottom right, #ff9400, #ffdd00);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    height: 22mm;
+}
+
+/* STYLING FOR LOGO IN NAVBAR*/
+#logo0 {
+    padding: 10px;
+    display: inline-block;
+    padding-top: 0.5rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    line-height: inherit;
+    left: 3rem;
+    position: absolute;
+    -webkit-filter: drop-shadow(20px 20px 25px rgb(245, 0, 0));
+}
+
+#logo {
+    visibility: hidden;
+}
+
+#spraak {
+    margin-top: 6mm;
+    padding: 7px;
+    display: inline-block;
+    padding-top: .4rem;
+    padding-bottom: .4rem;
+    margin-right: 0mm;
+    font-size: 1.5rem;
+    line-height: inherit;
+    white-space: nowrap;
+    right: 2rem;
+    position: absolute;
+}
+
+
+.navbar-nav li {
+    display: inline-block;
+}
+
+
+#right,
+#left,
+#middle {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Roboto;
+    font-size: 1.2rem;
+    color: #efffff;
+    text-shadow: 2px 2px 8px #ef6000;
+}
+
+.navbar-nav li a {
+    display: inline-block;
+    padding: 30px;
+}
+
+
+* {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    word-break: break-word;
+}
+
+body {
+    height: 100%;
+}
+
+.coverphoto {
+    background-color: #000;
+}
+
+.coverphoto img {
+    width: 30%;
+    height: auto;
+    margin: 0px 35%;
+}
+
+.introduksjonstekst {
+    padding: 5vh 20%;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, #ff9400, #ffdd00);
+}
+
+#demo1 {
+    grid-area: demo1;
+    width: 28vw;
+}
+
+.gridbullets1 {
+    grid-area: bullets1;
+}
+
+#demo2 {
+    grid-area: demo2;
+    width: 28vw;
+}
+
+.gridbullets2 {
+    grid-area: bullets2;
+}
+
+#demo3 {
+    grid-area: demo3;
+    width: 28vw;
+}
+
+.gridbullets3 {
+    grid-area: bullets3;
+}
+
+
+.grid2x3 {
+    padding: 2vh 0%;
+}
+
+.gridcombo1 {
+    display: grid;
+    grid-template-areas: 'demo1 bullets1';
+}
+
+.gridcombo2 {
+    display: grid;
+    grid-template-areas: 'bullets2 demo2';
+}
+
+.gridcombo3 {
+    display: grid;
+    grid-template-areas: 'demo3 bullets3';
+}
+
+footer {
+    padding: 10vh 15vw;
+    color: #fff;
+    background-color: #243746;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer a:hover {
+    color: #e5e5e5;
+}
+
+#samlepunktlogo {
+    height: 50px;
+}
+
+#facebooklogo {
+    height: 32px;
+    margin-top: 10px;
+    padding-right: 2px;
+}
+
+#linkedinlogo {
+    height: 32px;
+    margin-top: 10px;
+    padding-right: 2px;
+}
+
+#twitlogo {
+    height: 32px;
+    margin-top: 10px;
+    padding-right: 2px;
+}
+
+@media screen and (max-width: 950px) {
+   .grid2x3 {
+        padding: 2vh 0;
+        display: grid;
+    }
+
+    #demo1 {
+        width: 40vw;
+    }
+
+    .gridbullets1 {}
+
+    #demo2 {
+
+        width: 40vw;
+    }
+
+    .gridbullets2 {}
+
+    #demo3 {
+        width: 40vw;
+    }
+
+    .gridbullets3 {}
+
+    .gridcombo1 {
+        grid-template-areas: 'demo1''bullets1';
+    }
+
+    .gridcombo2 {
+        grid-template-areas: 'demo2''bullets2';
+    }
+
+    .gridcombo3 {
+        grid-template-areas: 'demo3''bullets3';
+    }
+
+
+}
+ 
+@media screen and (min-device-width: 471px) and (max-width: 720px) {
+
+
+
+    /*Nav,  styling av nav*/
+
+    .navbar-nav {
+
+        justify-content: center;
+        margin-left: -1rem;
+    }
+
+    #logo {
+        margin-top: auto;
+        padding: 3px;
+        display: inline-block;
+        padding-top: .2125rem;
+        padding-bottom: .2125rem;
+        left: 1rem;
+        font-size: .7rem;
+        line-height: inherit;
+        white-space: nowrap;
+        max-height: 13mm;
+        position: absolute;
+        visibility: visible;
+
+        margin-right: 1rem;
+
+        -webkit-filter: drop-shadow(20px 20px 25px rgb(245, 0, 0));
+    }
+
+    #logo0 {
+        display: none;
+    }
+
+
+
+    #spraak {
+        margin-top: 2mm;
+        padding: 3px;
+        display: inline-block;
+        padding-top: .4rem;
+        padding-bottom: .4rem;
+        margin-right: 0mm;
+        font-size: 1rem;
+        line-height: hide;
+        white-space: hide;
+        right: 1rem;
+        position: absolute;
+    }
+
+    #nav {
+        height: 15mm;
+    }
+
+
+    .navbar-nav li a {
+        font-size: 18px;
+        padding: 4.5mm;
+    }
+
+}
+
+
+@media only screen and (max-width: 470px) {
+
+    /*Nav,  styling av nav*/
+
+    #nav {
+
+        height: 10.7rem;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        margin-left: -2rem;
+    }
+
+    #logo {
+
+        padding: 0px;
+        padding-top: 1rem;
+        padding-bottom: .3125rem;
+
+        font-size: 1.5rem;
+        right: 1.6rem;
+        top: 0.5rem;
+        position: absolute;
+        margin-right: auto;
+        left: auto;
+        -webkit-filter: drop-shadow(20px 20px 25px rgb(245, 0, 0));
+        visibility: visible;
+
+    }
+
+
+    #logo0 {
+        display: none;
+    }
+
+    #spraak {
+
+        right: 2.2rem;
+        top: 5.5rem;
+        padding: 7px;
+        display: inline-block;
+        padding-top: .4rem;
+        padding-bottom: .4rem;
+        font-size: 1.5rem;
+        line-height: inherit;
+        white-space: nowrap;
+
+    }
+
+    .navbar-nav li a {
+        font-size: 18px;
+        padding: 4.5mm;
+
+    }
+
+}
