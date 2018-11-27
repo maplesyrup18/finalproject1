@@ -49,29 +49,25 @@ body {
 #navbar {
     background-image: linear-gradient(to bottom right, #ff9400, #ffdd00);
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    height: 22mm;
-    margin: 0;
-    padding-left: 30%;
-    z-index: 0;
+    display: flex;
+    justify-content: center;
+    
 }
 
 #logo {
-    padding: 10px;
-    display: inline-block;
-    padding-top: 0;
-    padding-left: 50px;
-    padding-bottom: .3125rem;
-    margin-right: 1rem;
-    font-size: 1.5rem;
-    line-height: inherit;
-    left: 3rem;
-    position: absolute;
+        
+        padding-top: .2125rem;
+        padding-bottom: .2125rem;
+        left: 6rem;
     -webkit-filter: drop-shadow(20px 20px 25px rgb(0, 0, 0));
-    height: 20mm;
+        display: table;
+    position: absolute;
+
+    
 }
 
 #logo2 {
-    padding: 10px;
+    padding: 8px;
     display: none;
     padding-top: 0;
     padding-left: 0;
@@ -79,44 +75,60 @@ body {
     padding-bottom: .3125rem;
     margin-right: 1rem;
     font-size: 1.5rem;
-    line-height: inherit;
     left: 3rem;
 
     -webkit-filter: drop-shadow(20px 20px 25px rgb(0, 0, 0));
-    height: 20mm;
 }
 
-#navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+#english {
+    top: 1.3rem;
+    right: 4rem;
+    position: absolute;
+    
 }
+
 
 #navbar li {
     float: left;
 }
 
 #navbar li a {
-    display: inline-block;
-    text-decoration: none;
+   text-decoration: none;
     font-weight: bold;
     font-family: Roboto;
     font-size: 1.2rem;
     color: #efffff;
     text-shadow: 2px 2px 8px #ef6000;
-    padding: 30px 70px 0px 10px;
-
+    font-size: 18px;
+    display: inline-block;
+    padding: 30px;
+    
+    
+}
+.table {
+    
+    display: table;
+    	margin: 0 auto;
 }
 
-.big_menu li {
-    padding-left: 5%;
-}
+ul#horizontal-list {
+	
+	list-style: none;
+	
+	}
+	ul#horizontal-list li {
+		display: inline;
+	}
+
 
 .dropbtn {
-    height: 22mm;
-    padding-left: 30px;
+    
     display: none;
-    padding
+    
+}
+
+.dropdown {
+    display: none;
 }
 
 #navbar li a:hover,
@@ -131,11 +143,12 @@ body {
 
 .dropdown-content {
     display: none;
-    position: absolute;
     background-color: white;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 10;
+    z-index:10;
+    
+    position: absolute:
 }
 
 .dropdown-content a {
@@ -145,7 +158,6 @@ body {
     display: block;
     text-align: left;
 
-    text-align: center;
 }
 
 .dropdown-content a:hover {
@@ -155,16 +167,7 @@ body {
 
 .dropdown:hover .dropdown-content {
     display: block;
-    width: 80%;
-
-}
-
-#english {
-    height: 12mm;
-    padding-top: 18px;
-    position: relative;
-    float: right;
-    right: 10%;
+    width: 20%;
 
 }
 
@@ -719,7 +722,7 @@ input[type=submit]:hover {
         padding: 10vh 15%;
     }
 
-    .coloredPicLeft img {
+    .coloredPicLeft img{
         width: 50vw;
         height: auto;
         margin-bottom: 20px;
@@ -760,9 +763,29 @@ input[type=submit]:hover {
         width: 100%;
         margin-left: 20%;
     }
+    #logo {
+        
+    left: 3rem;    
+    }
+    #english {
+        
+    right: 2rem;    
+    }
+     
+.dropdown, .dropbtn, dropdown-content   {
+    display: none;
+}
 
-    .dropbtn {
+
+}
+
+@media screen and (max-width:700px) {
+
+ .dropbtn {
         display: block;
+        padding: 0.7rem;
+        left: 0rem;
+        position: absolute;
     }
 
     .big_menu {
@@ -774,40 +797,28 @@ input[type=submit]:hover {
     }
 
     #logo2 {
-        display: inline-block;
+        display: inline;
         padding-top: 0.3rem;
-        position: relative;
-        left: 20%;
+        
+        
     }
 
-    #navbar {
-        padding-left: 5%;
-    }
-
+   
     #english {
-        padding-right: 15%;
-        right: 0%;
+    top: 1rem;
+    right: 1rem;
+    height: 2rem;
     }
+    .dropdown-content {    
+    
+        position: absolute;
+        left: 0rem;
+        top:4rem;
+    
+}
+
 }
 
 
-
-
-
-
-@media screen and (max-width: 450px) {
-    #logo2 {
-        left: 5%;
-    }
-
-    .dropbtn {
-        height: 11mm;
-        padding-top: 20px;
-    }
-
-    #navbar {
-        padding-left: 1%;
-    }
-}
 
 /*Slutt, Nav,  styling av nav*/
