@@ -52,19 +52,19 @@ body {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: center;
-    
+
 }
 
 #logo {
-        
-        padding-top: .2125rem;
-        padding-bottom: .2125rem;
-        left: 6rem;
+
+    padding-top: .2125rem;
+    padding-bottom: .2125rem;
+    left: 6rem;
     -webkit-filter: drop-shadow(20px 5px 25px rgb(0, 0, 0));
-        display: table;
+    display: table;
     position: absolute;
 
-    
+
 }
 
 #logo2 {
@@ -85,7 +85,7 @@ body {
     top: 1.3rem;
     right: 4rem;
     position: absolute;
-    
+
 }
 
 
@@ -105,19 +105,18 @@ body {
 }
 
 .table {
-    
+
     display: table;
     margin: 0 auto;
 }
 
 ul#horizontal-list {
-	
-	list-style: none;
-	
-	}
-	ul#horizontal-list li {
-		display: inline;
-	}
+    list-style: none;
+}
+
+ul#horizontal-list li {
+    display: inline;
+}
 
 
 .dropbtn {
@@ -128,21 +127,20 @@ ul#horizontal-list {
     display: none;
 }
 
-#navbar li a:hover, .dropdown:hover .dropbtn {
+#navbar li a:hover,
+.dropdown:hover .dropbtn {
     color: black;
-    
 }
 
 #navbar li.dropdown {
     display: inline-block;
-
 }
 
 .dropdown-content {
     display: none;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index:10;
+    z-index: 10;
     background-color: white;
     position: absolute:
 }
@@ -161,15 +159,19 @@ ul#horizontal-list {
     width: 20%;
     min-width: 200px;
 }
-.big_menu a{
+
+.big_menu a {
     color: #efffff;
 }
 
-.bg:hover, .bg a:hover{
-    background-color:#243746;
-    color: white !important; /*fuck you css*/
+.bg:hover,
+.bg a:hover {
+    background-color: #243746;
+    color: white !important;
+    /*fuck you css*/
 }
-.bg{
+
+.bg {
     text-align: center;
 }
 
@@ -356,45 +358,6 @@ footer a:hover {
 
 /* END OF STYLING FOR FOOTER */
 
-
-/* STYLING FOR ABONNERINGSBAREN I FOOTEREN */
-
-.container1 {
-    margin: 0;
-    padding-top: 10px;
-    background-color: #243746;
-}
-
-.container2 {
-    display: grid;
-    margin-top: 5px;
-    margin-right: 25%;
-    padding: 5px 0px;
-    grid-template-areas: 'input knapp'
-}
-
-input[type=text] {
-    padding: 3% 0px;
-    width: 100%;
-    border: 1px solid #e5e5e5;
-    grid-area: input;
-}
-
-input[type=submit] {
-    width: 40%;
-    margin-left: 20px;
-    background-color: #fff;
-    color: #000;
-    border: 1px solid #e5e5e5;
-    grid-area: knapp;
-}
-
-input[type=submit]:hover {
-    opacity: 0.8;
-}
-
-/* END OF STYLING FOR SUBSCRIPTION BAR */
-
 /* CSS ekslisivt for Kontakt.html*/
 
 #omoss {
@@ -512,15 +475,16 @@ input[type=submit]:hover {
         width: 100%;
 
     }
-    .left {
-    background-color: white;
-    margin-right: 0rem;
-}
 
-.right {
-    background-color: black;
-    margin-left: 0rem;
-}
+    .left {
+        background-color: white;
+        margin-right: 0rem;
+    }
+
+    .right {
+        background-color: black;
+        margin-left: 0rem;
+    }
 
 }
 
@@ -679,7 +643,17 @@ input[type=submit]:hover {
 }
 
 /* Adaptation for medium sized screens */
+@media screen and (min-width: 1350px) {
+    * {
+        font-size: 18px;
+    }
+}
+
 @media screen and (max-width: 1350px) {
+    * {
+        font-size: 16px;
+    }
+
     .whitePicRight {
         padding: 3vh 20%;
     }
@@ -724,7 +698,7 @@ input[type=submit]:hover {
         padding: 10vh 15%;
     }
 
-    .coloredPicLeft img{
+    .coloredPicLeft img {
         width: 50vw;
         height: auto;
         margin-bottom: 20px;
@@ -761,29 +735,26 @@ input[type=submit]:hover {
         padding: 5vh 15vw;
     }
 
-    input[type=submit] {
-        width: 100%;
-        margin-left: 20%;
-    }
     #logo {
-        
-    left: 3rem;    
+        left: 3rem;
     }
+
     #english {
-        
-    right: 2rem;    
+        right: 2rem;
     }
-     
-.dropdown, .dropbtn, dropdown-content   {
-    display: none;
-}
+
+    .dropdown,
+    .dropbtn,
+    dropdown-content {
+        display: none;
+    }
 
 
 }
 
 @media screen and (max-width:700px) {
 
- .dropbtn {
+    .dropbtn {
         display: block;
         padding: 0.7rem;
         left: 0rem;
@@ -792,7 +763,7 @@ input[type=submit]:hover {
 
     .big_menu {
         display: none;
-        
+
     }
 
     #logo {
@@ -802,23 +773,22 @@ input[type=submit]:hover {
     #logo2 {
         display: inline;
         padding-top: 0.3rem;
-        
-        
     }
 
-   
+
     #english {
-    top: 1rem;
-    right: 1rem;
-    height: 2rem;
+        top: 1rem;
+        right: 1rem;
+        height: 2rem;
     }
-    .dropdown-content {    
-    
+
+    .dropdown-content {
+
         position: absolute;
         left: 0rem;
-        top:3.75rem;
-    
-}
+        top: 3.75rem;
+
+    }
 
 }
 
